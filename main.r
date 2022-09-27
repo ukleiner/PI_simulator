@@ -71,11 +71,11 @@ plot_benchmark <- benchmark_sim(sizes, sizes)
 # run_sim(1e4)
 
 X11()
-# ggsave("illust.png")
+# ggsave("illust.png", plot_illust)
 plot(plot_illust)
 X11()
 plot(plot_benchmark)
-# ggsave("benchmark.png")
+# ggsave("benchmark.png", plot_benchmark)
 if (!interactive()) {
   Sys.sleep(Inf)
 }
